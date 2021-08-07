@@ -1,11 +1,11 @@
 ## Advance React Hooks 
-This repository contained some of the basic to advance concepts based React Hooks Project.
+This repository contained some of the basic to advanced concepts based React Hooks Project.
 
 ### For quick setup:
 - clone this repository
 - run `npm install`
 - run `npm start`
-
+- open `http://localhost:3000`
 
 ### Deploy on Github Pages:
 - add `"homepage": "https://username.github.io/RepoName"` in your package.json at the top
@@ -18,3 +18,4 @@ This repository contained some of the basic to advance concepts based React Hook
   ```
 - Lastly run `npm run deploy`.
 That's it!
+
