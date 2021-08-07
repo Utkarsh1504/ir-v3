@@ -1,17 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
+import State from "./State";
+import Effect from "./Effect";
+import Context from "./Context";
+import Ref from "./Ref";
+import Reducer from "./Reducer";
+import Memo from "./Memo";
+import Callback from "./Callback";
+import LayoutEffect from "./LayoutEffect";
+import ImperativeHandle from "./ImperativeHandle";
+import DebugValue from "./DebugValue";
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <div className="App">
+      <State />
+      <hr />
+      <Effect />
+      <hr />
+      <Context />
+      <hr />
+      <Ref />
+      <hr />
+      <Reducer />
+      <hr />
+      <Memo />
+      <hr />
+      <Callback />
+      <hr />
+      <LayoutEffect />
+      <hr />
+      <ImperativeHandle />
+      <hr />
+      <DebugValue />
+    </div>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
