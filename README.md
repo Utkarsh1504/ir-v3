@@ -5,3 +5,16 @@ This repository contained some of the basic to advance concepts based React Hook
 - clone this repository
 - run `npm install`
 - run `npm start`
+
+
+### Deploy on Github Pages:
+- add `"homepage": "https://username.github.io/RepoName"` in your package.json at the top
+- now install `npm install --save gh-pages`
+- now simply add the following in your package.json under the scripts section
+- ```yml
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  ```
+- Lastly run `npm run deploy`.
+That's it!
